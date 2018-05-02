@@ -13,3 +13,7 @@ search_box.on('mouseover', function () {
         d3.select('#parallax-div')
             .style("transform", "translateZ(0)");
     });
+
+// Focus on the search-bar as soon as the script finishes using jQuery
+
+$(()=>$('#query-text-box').focus());
