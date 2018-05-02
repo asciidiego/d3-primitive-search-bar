@@ -24,27 +24,25 @@
 </head>
 
 <body>
-<div class="scene">
-    <div class="search-box"
-         style="transform-style: preserve-3d"
-         data-tilt
-         data-tilt-reverse="true"
-         data-tilt-scale="1.2"
-         data-tilt-perspective="600"
-         data-depth="0.2">
-        <div class="middle" data-depth="0.6">
-            <div class="inner">
-                <div id="title-string">
-                    <p>YouTube Search</p>
-                </div>
-                <H3 id="title" class="title"></H3>
-                <form action="http://www.youtube.com/results" method="get" target="" >
-                    <input type="text" name="search_query" style="width: 100%">
-                    <p>
-                    <input type="submit" value="Search." class="button button-tiny"></input>
-                </form>
+<div class="search-box"
+     style="transform-style: preserve-3d"
+     data-tilt
+     data-tilt-reverse="true"
+     data-tilt-scale="1.2"
+     data-tilt-perspective="600"
+     data-depth="0.2">
+    <div class="middle" data-depth="0.6">
+        <div class="inner">
+            <div style="width: 100%; height: 2em"><H3 id="title" class="title"></H3></div>
+            <form action="https://google.com/search" method="get" target="" >
+                <input type="text" name="q" style="width: 100%; font-family: 'Work Sans Light', sans-serif">
+                <p>
+                    <button type="submit" value="Search." class="search-button">
+                        <span>Search</span>
+                    </button>
+                </p>
+            </form>
 
-            </div>
         </div>
     </div>
 </div>
