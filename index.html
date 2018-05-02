@@ -1,12 +1,59 @@
 <html>
 <head>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="./index.css">
+
+    <!--JS Libraries-->
+    <!-- typed.js -->
+    <!-- A jQuery typing animation script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Parallax Effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.css">
 
 </head>
 
 <body>
-<div>
-    <H3>Search Title</H3>
-    <input type="text">
+<div class="scene">
+    <div class="search-box"
+         style="transform-style: preserve-3d"
+         data-tilt
+         data-tilt-reverse="true"
+         data-tilt-scale="1.2"
+         data-tilt-perspective="600"
+         data-depth="0.2">
+        <div class="middle" data-depth="0.6">
+            <div class="inner">
+                <div id="title-string">
+                    <p>YouTube Search</p>
+                </div>
+                <H3 id="title" class="title"></H3>
+                <form action="http://www.youtube.com/results" method="get" target="" >
+                    <input type="text" name="search_query" style="width: 100%">
+                    <p>
+                    <input type="submit" value="Search." class="button button-tiny"></input>
+                </form>
+
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- Vanilla JS Tilt -->
+<!-- A smooth 3D tilt javascript library forked from Tilt.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.4.1/vanilla-tilt.js"></script>
+
+<!-- Own .js files -->
+<script src="index.js"></script>
 </body>
 </html>
