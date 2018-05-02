@@ -15,13 +15,15 @@
     box-shadow: 0 0 20pt gray;
     border-radius: 10pt;
     padding: 2em;
-    background: linear-gradient(135deg, #fc00ff , #00dbde)
+    background: linear-gradient(135deg, #fc00ff , #00dbde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search-box .middle {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%) translateZ(2em);
+    width: 100%;
+    transform: translateZ(0);
 }
 
 .search-box .inner {
